@@ -1,0 +1,13 @@
+.course_box{
+    text-align:center;
+    margin:10px 20px ;
+    background-color:rgb(9, 80, 78) ;
+    box-shadow:2px 4px 6px rgba(104, 10, 10, 0.3);
+    color:black;
+}
+body{
+    background-color: chocolate;
+}
+h2{
+    color:brown;
+}

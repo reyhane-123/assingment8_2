@@ -1,0 +1,29 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>static project</title>
+        <link rel="stylesheet" href={%static "app/style.css"%}>
+    </head>
+    <body dir="rtl">
+        <h2>ریحانه <h2>
+        <table width="50%">
+            {% for item in show%}
+                {% if forloop.counter0|divisibleby:"3"%}
+                    <tr>
+                {%endif%}
+                        <td width="30%">
+                           
+                            <div class="course_box">
+                                <p>{{item.name}}</p>
+                                <p>{{item.id}}</p>
+                            </div>
+                            
+                        </td>
+                {% if forloop.counter0|divisibleby:"3"%}
+                    </tr>
+                {%endif%}
+            {%endfor%}
+        </table>
+    </body>
+</html>
